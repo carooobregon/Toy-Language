@@ -1,3 +1,10 @@
+/*
+  This file contains the class Lexico which represents the lexical scanner for
+  our proyect.
+
+  Lexico.h
+  
+*/
 #define ERROR 999
 #include <sstream>
 #include <string>
@@ -10,22 +17,22 @@ const int transitionMatrix[4][6] = {
             {103, ERROR, 3, ERROR, ERROR, ERROR}
             };
                                     
-class LexicoCaro{
+class Lexico{
   public:
-      LexicoCaro();
+      Lexico();
             
-            int filter(char);
+      int filter(char);
       void validate();
       vector<Token> tokens;
       vector<Token> scan(string curr);
 };
 
 
-LexicoCaro::LexicoCaro(){
+Lexico::Lexico(){
     //cout <<""<<endl;
 }
 
-vector<Token> LexicoCaro::scan(string curr){
+vector<Token> Lexico::scan(string curr){
   char c;
   int state, index;
   string value = "";
@@ -57,7 +64,6 @@ vector<Token> LexicoCaro::scan(string curr){
               cout << endl;
           switch(state){
                   case 0:
-                      tokens;
                       break;
                   case 101:
                       value = value.substr(0, value.length()-1);
@@ -117,7 +123,7 @@ vector<Token> LexicoCaro::scan(string curr){
 }
 
 
-    int LexicoCaro::filter(char c){
+    int Lexico::filter(char c){
       
         if(c == ' ' || c == '\n'||c=='\t' || c == '\0'){
             return 0;
