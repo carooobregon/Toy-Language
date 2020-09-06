@@ -4,14 +4,14 @@ To compile, run: "g++ main.cpp -std=c++11 -o main"
 	Ana Carolina Arellano Alvarez   	A01650945
 	Ricardo Gabriel Ramirez Arriaga 	A01338143
 	Carolina Obregon Barrenechea    	A01251983
-	Gabriela Corona Garza 						A01282529
+	Gabriela Corona Garza 				A01282529
 */
 
 #include <iostream>
 #include <vector>
 #include <string>
 #include <fstream>
-#include "Token.h"
+#include "scanner/Token.h"
 #include "scanner/Lexico.h"
 #include "parser/Semantico.h"
 
