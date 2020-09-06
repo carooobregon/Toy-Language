@@ -34,7 +34,7 @@ void Semantico::parseS(vector<Token> tokens){
   }
 
 	else if(tokens[0].getType() == "OPERATION"){
-      cout << "OPERATION" << endl;
+      //cout << "OPERATION" << endl;
       matched = match(tokens[1].getType(), "REGISTER");
       if(!matched){
         cout << "SEMANTIC ERROR. EXPECTED TOKEN: REGISTER. RECEIVED TOKEN: " << tokens[1].getType() << endl;
@@ -50,7 +50,6 @@ void Semantico::parseS(vector<Token> tokens){
       }
   }
 	else if(tokens[0].getType() == "ASSIGNMENT"){
-		cout <<" ASSIGNMENT " << endl;
 		if(match(tokens[1].getType(), "REGISTER") || (match(tokens[1].getType(), "INTEGER"))){
 			matched = match(tokens[2].getType(), "REGISTER");
 			if(matched){

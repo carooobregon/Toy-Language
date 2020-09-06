@@ -42,7 +42,6 @@ int main() {
          }
          Semantico mySemantic;
          mySemantic.parse(tokens);
-         //parse tokens
      }
     return 0;
 }
