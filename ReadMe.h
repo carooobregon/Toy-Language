@@ -1,3 +1,6 @@
+/* First project for Programming Languages
+  In collaboration w/ Ana Caro Arellano, Gaby Corona & Ricky Ramirez */
+
 Project 01
 In this project, you will use the strategies seen in class to design and implement both the scanner and parser for a simple toy language. This project may be solved in teams of at most three members. If you want, you can submit this work individually.
 
